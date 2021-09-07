@@ -175,7 +175,7 @@ Password:
 **Q1: “pos_config文件下的pos_key”删除了怎么办？**
 
 A1: “pos_config文件下的pos_key”这个文件不要轻易删除。
-如果删除了，需要重新连接https://staking.cfx.chenxing.li:12643/pos.html，退出质押，等9个小时之后CFX解锁后重新注册。
+如果删除了，需要重新连接 http://8.142.2.208/ ，退出质押，等9个小时之后CFX解锁后重新注册。
 这时候建议使用新Conflux地址（账户）重新开始测试。
 
 **Q2:卡了有20多分钟了，关闭重新起一次可以同步上**
