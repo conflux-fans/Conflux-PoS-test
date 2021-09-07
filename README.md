@@ -138,7 +138,7 @@ Password:
 
 命令行返回值的第一项为注册pos的交易需要的data字段，第二项为pos的账户地址（暂时用不到）。
 
-5. 打开 https://staking.cfx.chenxing.li:12643/pos.html 页面，登录自己的钱包（确认配置在测试网），等待账户余额变化，此过程可能需要数分钟
+5. 打开 http://8.142.2.208/ 页面，登录自己的钱包（确认配置在测试网），等待账户余额变化，此过程可能需要数分钟
 
 ![](https://pic1.zhimg.com/80/v2-bcba1fc3774a7504515aa3b2789b1ff4_1440w.png)
 ![](https://pic1.zhimg.com/80/v2-3a23b44056fc8a66d1f705dda48f78a7_1440w.png)
@@ -171,7 +171,20 @@ PoS key detected, please input your encryption password.
 Password:
 ```
     
+### Q&A
+**Q1: “pos_config文件下的pos_key”删除了怎么办？**
 
+A1: “pos_config文件下的pos_key”这个文件不要轻易删除。
+如果删除了，需要重新连接https://staking.cfx.chenxing.li:12643/pos.html，退出质押，等9个小时之后CFX解锁后重新注册。
+这时候建议使用新Conflux地址（账户）重新开始测试。
+
+**Q2:卡了有20多分钟了，关闭重新起一次可以同步上**
+
+A2：重启程序
+
+**Q3：第一轮测试结束，第二轮测试的时候，抵押CFX执行合约无法完成交易。**
+
+A3: 在portal->点击头像->设置->高级 中找到“自定义 nonce”开关打开，发交易时就会多出一个填写 nonce 的框，将nonce改成0
 
 
 
