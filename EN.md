@@ -192,7 +192,7 @@ A4: upload `stderr.txt`, `pos.log` and `log` folder to Google Drive, and share t
 **Q5: How to unlock votes?**
 
 Q5: Press the "Unlock votes" button if you want to close it.
-![image](https://pic2.zhimg.com/80/v2-dfe231dc87c70f7b9d0abe7f31803030_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/133567650-67b947ea-47c3-4b90-848a-06ee9befb031.png)
  
 **Q6: About restart?**
 
