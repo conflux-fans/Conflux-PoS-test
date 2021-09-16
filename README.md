@@ -1,3 +1,4 @@
+## 一、启动 fullnode
 ### 1.设置新的 Chorme账户
 1. 打开Chrome浏览器，点击右上角用户头像，点击弹出窗口最下方添加个人资料
 ![](https://pic3.zhimg.com/80/v2-ed09d962c40401a35b1c666e295d06ac_1440w.png)
@@ -99,10 +100,10 @@ conflux
 
 ![](https://pic3.zhimg.com/80/v2-48fc0b24d573deafb0bbb3f56b58205f_1440w.png)
 
+## 二、启动 PoS
+### 1
 
-### 7.启动 PoS
-
-1. 第一次启动节点，会需要设置密码，用来加密PoS的私钥。屏幕上显示如下内容的时候输入密码，回车继续。
+第一次启动节点，会需要设置密码，用来加密PoS的私钥。屏幕上显示如下内容的时候输入密码，回车继续。
 
 ```
 PoS key is not detected and will be generated instead, please input your encryption password. This password is needed when you restart the node
@@ -120,15 +121,18 @@ Password:
 
 然后输入命令`start.bat`，重新启动fullnode
 
-2. 右键左下角“开始”图标，打开Windows Powershell；
+### 2
+右键左下角“开始”图标，打开Windows Powershell；
 
 ![](https://pic3.zhimg.com/80/v2-912969000d96074df5b9ef178b4ce805_1440w.png)
 
-3. 复制`run`文件夹地址，在Powershell中输入`cd`+空格+粘贴刚才复制的地址
+### 3
+复制`run`文件夹地址，在Powershell中输入`cd`+空格+粘贴刚才复制的地址
 
 ![](https://pic1.zhimg.com/80/v2-24eddea02c61f7ee17b0b0793651cdfe_1440w.png)
 
-4. 然后执行下面的命令：
+### 4
+然后执行下面的命令：
 
 ```
 ./conflux rpc local pos register --power 1
@@ -138,32 +142,37 @@ Password:
 
 命令行返回值的第一项为注册pos的交易需要的data字段，第二项为pos的账户地址（暂时用不到）。
 
-5. 打开 http://8.142.2.208/ 页面，登录自己的钱包（确认配置在测试网），等待账户余额变化，此过程可能需要数分钟
+### 5
+打开 http://8.142.2.208/ 页面，登录自己的钱包（确认配置在测试网），等待账户余额变化，此过程可能需要数分钟
 
 ![](https://pic1.zhimg.com/80/v2-bcba1fc3774a7504515aa3b2789b1ff4_1440w.png)
 ![](https://pic1.zhimg.com/80/v2-3a23b44056fc8a66d1f705dda48f78a7_1440w.png)
 
-6. 点击“Stake CFX 以获得票数”，选择抵押CFX的数量（至少100个），并点击“抵押”按钮，抵押需要进行portal确认；
+### 6
+点击“Stake CFX 以获得票数”，选择抵押CFX的数量（至少100个），并点击“抵押”按钮，抵押需要进行portal确认；
 
 ![](https://pic1.zhimg.com/80/v2-498a9b71b069ba64bc24fa95d3fc41c4_1440w.png)
 
 
-7. 抵押成功后，点击按钮“进行PoS锁仓以获得利息”，粘贴填入第三步获取到的data字段，选择锁仓票数（100CFX算1票），点击“首次注册”按钮，并在portal中签名确认。
+### 7
+抵押成功后，点击按钮“进行PoS锁仓以获得利息”，粘贴填入第4步获取到的data字段，选择锁仓票数（100CFX算1票），点击“首次注册”按钮，并在portal中签名确认。
 
 ![](https://pic3.zhimg.com/80/v2-629f907d3874c0e3bf7779eb43f22659_1440w.png)
 
-___
+### 8
 
-#### 关闭 POS 挖矿
+解压`pos_config-v1.2.0-alpha-5.tgz`压缩包（压缩包会在之后发放）
+
+将解压后文件夹内的所有文件移至`run`文件夹的`pos.config`目录下，期间保持程序正常运行
+
+### 9
 想要退出时，点击锁仓页面中的“解锁退出”按钮即可。
 
 ![](https://pic2.zhimg.com/80/v2-ce5ace290c84107cb0e1adc3d811285d_1440w.png)
-
-___
     
- ### 重启节点
+### 10
  
-    之后重启节点的时候需要输入和第一次启动的时候相同的密钥才能正常启动：
+之后重启节点的时候需要输入和第一次启动的时候相同的密钥才能正常启动：
 
 
 ```
@@ -186,7 +195,9 @@ A2：重启程序
 
 A3: 在portal->点击头像->设置->高级 中找到“自定义 nonce”开关打开，发交易时就会多出一个填写 nonce 的框，将nonce改成0
 
+**Q4: 测试遇到问题，该如何反馈？**
 
+A4：测试遇到问题，请将stderr.txt、pos.log和log文件夹，打包上传至百度网盘，并将链接分享给群内@Coding
 
 
 
