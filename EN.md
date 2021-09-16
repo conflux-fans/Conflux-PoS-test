@@ -1,3 +1,5 @@
+v1.2.0-alpha-5
+
 ## Start Fullnode
 ### 1. Set up your new Chrome account
 1. Open the Chrome browser, click the avatar of the user in the upper and right corner, click on the bottom of the pop-up window to set up a new Chrome profile.
@@ -99,7 +101,7 @@ Start full node by inputting the command `start.bat`.
  
 ![](https://pic3.zhimg.com/80/v2-48fc0b24d573deafb0bbb3f56b58205f_1440w.png)
  
-## Start PoS
+## PoS Registry
  
 ### 1
 We need to set the password when starting the node the first time. This password is used to encrypt the private key of PoS. Press enter when you see the content on the screen as below:
@@ -156,48 +158,48 @@ Press the "Lock your staking to obtain interest" button after staking successful
 ![image](https://pic1.zhimg.com/80/v2-4918accb94594a9fa1a8ebf802b52ca1_1440w.png)
 ![image](https://pic2.zhimg.com/80/v2-7dce9e6868e5e6d40117d303c2fb9385_1440w.png)
 
-### 8
+## PoS Transition Test
 Unzip the archive `pos_config-v1.2.0-alpha-5.tgz` （the archive will be released later）
 
 Put the documents under `run`-`pos_config` folder.
 
-### 9
-Press the "Unlock votes" button if you want to close it.
+
+
+
+
+
+
+
+
+
+## Q&A
+**Q1: If I delete the `pos_key` under the `pos_config` folder, what should I do?**
+ 
+A1: The file `pos_key` under the `pos_config` folder should not be deleted easily. If you deleted it, you need to reconnect to http://13.212.200.174/, exit the staking, wait for 9 hours for CFX to unlock, and re-register. At this point, it is recommended to start testing again with a new Conflux address (account).
+ 
+**Q2: It's been stuck for more than 20 minutes, what should I do?**
+ 
+A2：Restart your program.
+ 
+**Q3: What should I do if the transaction failed when executing the staking CFX contract? I completed the first test and received such a problem during the second test.**
+ 
+A3: In Conflux portal->click avatar->settings->advanced, find the "custom nonce" switch and turn it on, then there will be a box to fill in the nonce when you send a transaction, change the transaction's nonce to 0
+
+**Q4: What should I do when I meet problems?**
+
+A4: upload `stderr.txt`, `pos.log` and `log` folder to Google Drive, and share the link with Cike in Discord.
+
+**Q5: How to unlock votes?**
+
+Q5: Press the "Unlock votes" button if you want to close it.
 ![image](https://pic2.zhimg.com/80/v2-dfe231dc87c70f7b9d0abe7f31803030_1440w.png)
  
- 
-### 10
- 
-The password that you set at the very first time is required when you restart the node:
- 
+**Q6: About restart?**
+
+A6: The password that you set at the very first time is required when you restart the node:
 
 ```
 PoS key detected, please input your encryption password.
 Password:
 ```
-
-
-## Q&A
-Q1: If I delete the `pos_key` under the `pos_config` folder, what should I do?
  
-A1: The file `pos_key` under the `pos_config` folder should not be deleted easily. If you deleted it, you need to reconnect to http://13.212.200.174/, exit the staking, wait for 9 hours for CFX to unlock, and re-register. At this point, it is recommended to start testing again with a new Conflux address (account).
- 
-Q2: It's been stuck for more than 20 minutes, and it can be synchronized by closing and restarting it.
- 
-A2：Restart your program
- 
-Q3: What should I do if the transaction failed when executing the staking CFX contract? I completed the first test and received such a problem during the second test.
- 
-A3: In Conflux portal->click avatar->settings->advanced, find the "custom nonce" switch and turn it on, then there will be a box to fill in the nonce when you send a transaction, change the transaction's nonce to 0
-
-Q4: What should I do when I meet problems?
-
-A4: upload `stderr.txt`, `pos.log` and `log` folder to Google Drive, and share the link with Cike in Discord.
- 
- 
- 
- 
- 
- 
- 
-  
