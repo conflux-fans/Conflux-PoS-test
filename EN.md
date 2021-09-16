@@ -13,7 +13,7 @@ v1.2.0-alpha-5
 ### 2. Install ConfluxPortal
 Install the Conflux Portal in the newly created Chrome account.
  
-You can refer ConfluxPortal v0.6.10 update tutorial: https://forum.conflux.fun/t/confluxportal-v0-6-10/9284
+You can refer ConfluxPortal v0.6.10 update tutorial: https://forum.conflux.fun/t/confluxportal-v0-6-10-upgrade-tutorial/9291
  
 ### 3. Set a new blockchain network
 The name of the network is set to: PoS testnet1
