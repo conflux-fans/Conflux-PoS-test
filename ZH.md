@@ -1,3 +1,5 @@
+v1.2.0-alpha-5
+
 ## 一、启动 fullnode
 ### 1.设置新的 Chorme账户
 1. 打开Chrome浏览器，点击右上角用户头像，点击弹出窗口最下方添加个人资料
@@ -100,7 +102,7 @@ conflux
 
 ![](https://pic3.zhimg.com/80/v2-48fc0b24d573deafb0bbb3f56b58205f_1440w.png)
 
-## 二、启动 PoS
+## 二、 PoS 注册
 ### 1
 
 第一次启动节点，会需要设置密码，用来加密PoS的私钥。屏幕上显示如下内容的时候输入密码，回车继续。
@@ -159,35 +161,21 @@ Password:
 
 ![](https://pic3.zhimg.com/80/v2-629f907d3874c0e3bf7779eb43f22659_1440w.png)
 
-### 8
+## 三、PoS过渡测试
 
 解压`pos_config-v1.2.0-alpha-5.tgz`压缩包（压缩包会在之后发放）
 
 将解压后文件夹内的所有文件移至`run`文件夹的`pos.config`目录下，期间保持程序正常运行
 
-### 9
-想要退出时，点击锁仓页面中的“解锁退出”按钮即可。
-
-![](https://pic2.zhimg.com/80/v2-ce5ace290c84107cb0e1adc3d811285d_1440w.png)
-    
-### 10
- 
-之后重启节点的时候需要输入和第一次启动的时候相同的密钥才能正常启动：
-
-
-```
-PoS key detected, please input your encryption password.
-Password:
-```
     
 ### Q&A
-**Q1: “pos_config文件下的pos_key”删除了怎么办？**
+**Q1: pos_config文件下的pos_key删除了怎么办？**
 
 A1: “pos_config文件下的pos_key”这个文件不要轻易删除。
 如果删除了，需要重新连接 http://8.142.2.208/ ，退出质押，等9个小时之后CFX解锁后重新注册。
 这时候建议使用新Conflux地址（账户）重新开始测试。
 
-**Q2:卡了有20多分钟了，关闭重新起一次可以同步上**
+**Q2:卡了有20多分钟了，如何处理？**
 
 A2：重启程序
 
@@ -199,9 +187,20 @@ A3: 在portal->点击头像->设置->高级 中找到“自定义 nonce”开关
 
 A4：测试遇到问题，请将stderr.txt、pos.log和log文件夹，打包上传至百度网盘，并将链接分享给群内@Coding
 
+**Q5：如何退出？**
 
+A5: 点击锁仓页面中的“解锁退出”按钮即可。
 
+![](https://pic2.zhimg.com/80/v2-ce5ace290c84107cb0e1adc3d811285d_1440w.png)
 
+**Q6: 重启节点注意：**
+
+A6: 需要输入和第一次启动的时候相同的密钥才能正常启动：
+
+```
+PoS key detected, please input your encryption password.
+Password:
+```
 
 
 
