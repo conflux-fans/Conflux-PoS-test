@@ -1,6 +1,19 @@
-v1.2.0-alpha-5
+## Conflux PoS 测试网第一次公开测试
 
-## 一、启动 fullnode
+### 预计启动时间：9月26日18时
+
+### 版本号：v1.2.0-beta-1
+
+### 测试时间表：
+- #### 9月26日18时 启动fullnode
+- #### 9月27日12时 开始PoS注册（提前注册会失败）（区块数129600）
+- #### 9月29日12时 停止注册 添加pos.config（区块数475200）
+- #### 10月1日18时前 完成添加（区块高度720000）
+
+## 
+## 
+
+## 一、启动 fullnode（9月26日18时开始）
 ### 1.设置新的 Chorme账户
 1. 打开Chrome浏览器，点击右上角用户头像，点击弹出窗口最下方添加个人资料
 ![](https://pic3.zhimg.com/80/v2-ed09d962c40401a35b1c666e295d06ac_1440w.png)
@@ -26,12 +39,12 @@ RPC填写：http://101.132.158.162:12537
 #### 运行文件
 
 
-**Fullnode 程序**:conflux_win10_x64_pos_testnet.zip
+Fullnode 程序 GitHub 下载链接：https://github.com/conflux-fans/Conflux-PoS-test/releases/download/conflux_v1.2.0-beta-1/conflux_win10_x64_v1.2.0-beta-1.zip
 
 #### 运行 conflux 准备
 
 - 创建目录：conflux
-- 分别将下载包解压至目录
+- 将下载包解压至目录
 
 ⚠ 目录结构为
 
@@ -39,9 +52,16 @@ RPC填写：http://101.132.158.162:12537
 conflux
 └── run
     └── conflux.exe
+    └── conflux.pdb
     └── pos_testnet.toml
     └── log.yaml
-    └── pos_config
+    └── clear_state.bat
+    └── clear_state.sh
+    └── libcrypto-1_1-x64.dll
+    └── libssl-1_1-x64.dll
+    └── start.bat
+    └── start.sh
+    └── throttling.toml
 ```
 
 #### 配置说明
@@ -102,7 +122,7 @@ conflux
 
 ![](https://pic3.zhimg.com/80/v2-48fc0b24d573deafb0bbb3f56b58205f_1440w.png)
 
-## 二、 PoS 注册
+## 二、 PoS 注册（区块数129600，约9月27日12时开始）
 ### 1
 
 第一次启动节点，会需要设置密码，用来加密PoS的私钥。屏幕上显示如下内容的时候输入密码，回车继续。
@@ -161,11 +181,11 @@ Password:
 
 ![](https://pic3.zhimg.com/80/v2-629f907d3874c0e3bf7779eb43f22659_1440w.png)
 
-## 三、PoS过渡测试
+## 三、PoS过渡测试（区块数475200，约9月29日12时开始；区块高度720000，约10月1日18时前完成）
 
-解压`pos_config-v1.2.0-alpha-5.tgz`压缩包（压缩包会在之后发放）
+GitHub下载链接：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-1
 
-将解压后文件夹内的所有文件移至`run`文件夹的`pos.config`目录下，期间保持程序正常运行
+下载链接内的压缩包`pos.config_conflux_win10_x64_v1.2.0-beta-1`，将解压后文件夹内的所有文件移至`run`文件夹的`pos_config`目录下，期间保持程序正常运行
 
     
 ### Q&A
