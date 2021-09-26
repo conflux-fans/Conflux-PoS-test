@@ -211,7 +211,7 @@ A4：测试遇到问题，请将stderr.txt、pos.log和log文件夹，打包上�
 
 A5: 点击锁仓页面中的“解锁退出”按钮即可。
 
-![](https://pic2.zhimg.com/80/v2-ce5ace290c84107cb0e1adc3d811285d_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/134808407-aaf86cbd-c8a9-44fc-8588-4c73f543e62e.png)
 
 **Q6: 重启节点注意：**
 
