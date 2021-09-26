@@ -208,7 +208,7 @@ A4: upload `stderr.txt`, `pos.log` and `log` folder to a Google Drive folder, an
 **Q5: How to unlock votes?**
 
 Q5: Cilck the "Unlock votes".
-![image](https://pic2.zhimg.com/80/v2-dfe231dc87c70f7b9d0abe7f31803030_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/134808369-8e3980c8-1211-4cdc-8dc0-6562a95814b9.png)
  
 **Q6: What should I be cautious about when I restart the node?**
 
