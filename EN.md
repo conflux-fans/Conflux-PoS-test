@@ -2,7 +2,7 @@
 
 ### Start Time: Sept.26 18:00(GMT+8)
 
-### Version: v1.2.0-beta-1
+### Version: v1.2.0-beta-2
 
 ### Timeline: (GMT+8)
 - #### We will start fullnode running at around Sept.26th 18:00.
@@ -40,7 +40,7 @@ RPC URL：http://101.132.158.162:12537
  
 #### You need to download the following files：
 
-- Fullnode GitHub download：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-1
+- Fullnode GitHub download：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-2
  
 #### Preparation of running full node program：
 - Create a directory named conflux
@@ -180,9 +180,11 @@ Click "Lock your staking to obtain interest" after staking successfully. Then pa
 
 ## PoS Transition Test (Blockheight 475200, around Sept.29 12:00; finish before Blockheight 720000, around Oct.1st 18:00)
 
-PoS Transition test will start at Blockheight 475200 and end at Blockheight 720000. We will provide the GitHub download link soon. 
+PoS Transition test will start at Blockheight 475200 and end at Blockheight 720000. 
 
-Download the package in the link `pos.config_conflux_win10_x64_v1.2.0-beta-1` and uncompress the package. Put the files under `run`-`pos_config` folder.
+GitHub download link：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-2
+
+Download the package in the link `pos_config-v1.2.0-beta-2.tgz` and uncompress the package. Put the files under `run`-`pos_config` folder.
 
 
 
