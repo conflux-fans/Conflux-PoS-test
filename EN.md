@@ -91,31 +91,31 @@ The command should look like this after edition:
 - Replace "stratum" with "cpu"
  
 The command should look like this after edition:
-![](https://pic2.zhimg.com/80/v2-001304b360c1ecfa3c9c9391e0fddd55_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205780-ff562c90-5d8d-484d-b12f-cb5f8eeaead7.png)
  
 ### 5. Turn on the test mode
  
 Open the `log.yaml` file and find the commands shown in the following figures, replace all the "info" with "debug", then save the file.
  
-![](https://pic1.zhimg.com/80/v2-a4fb4d17d2aa1db41941bf220d4cc4f3_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205797-49d9d10f-98e0-4bbb-a918-b2da72f31a77.png)
  
 The command should look like this after edition:
  
-![](https://pic3.zhimg.com/80/v2-c280474886569245ea8855a5025c66be_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205813-674f7edd-7679-427d-a973-d68319cfed45.png)
  
 ### 6. Run the full node programme
  
 Open the `run` folder. Right-click your mouse to copy the directory path as the following picture shown.
 
-![](https://pic1.zhimg.com/80/v2-f489ab81ba3981bb298a2e80fd98abfb_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205832-9f34fafb-9cc5-44bd-9f68-8ac6198d218c.png)
  
 Press `win and R` on the keyboard. Open the command window by entering "cmd".
  
-![](https://pica.zhimg.com/80/v2-44af7c027eb3af8bb57f00cb847b6de5_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205847-7bb179bc-27db-4452-8078-a0ab17034042.png)
  
 Enter `cd` + space + the directory path you copied before.
  
-![](https://pic1.zhimg.com/80/v2-53902b06958d58f2f3ca26556556c147_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205864-efc734bc-3baf-4cc9-9ef1-6446d87e0d27.png)
  
 Start full node by entering the command `start.bat`.
  
