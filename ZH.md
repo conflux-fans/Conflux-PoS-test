@@ -2,7 +2,7 @@
 
 ### 预计启动时间：9月26日18时
 
-### 版本号：v1.2.0-beta-1
+### 版本号：v1.2.0-beta-2
 
 ### 测试时间表：
 - #### 9月26日18时 启动fullnode
@@ -39,7 +39,7 @@ RPC填写：http://101.132.158.162:12537
 #### 运行文件
 
 
-Fullnode 程序 GitHub 下载链接：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-1
+Fullnode 程序 GitHub 下载链接：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-2
 
 #### 运行 conflux 准备
 
@@ -183,9 +183,9 @@ Password:
 
 ## 三、PoS过渡测试（区块数475200，约9月29日12时开始；区块高度720000，约10月1日18时前完成）
 
-GitHub下载链接 稍后会发布。
+GitHub下载链接：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-2
 
-下载链接内的压缩包`pos.config_conflux_win10_x64_v1.2.0-beta-1`，将解压后文件夹内的所有文件移至`run`文件夹的`pos_config`目录下，期间保持程序正常运行
+下载链接内的压缩包`pos_config-v1.2.0-beta-2.tgz`，将解压后文件夹内的所有文件移至`run`文件夹的`pos_config`目录下。
 
     
 ### Q&A
