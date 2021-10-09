@@ -39,7 +39,7 @@ RPC填写：http://101.132.158.162:12537
 #### 运行文件
 
 
-Fullnode 程序 GitHub 下载链接：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-1
+Fullnode 程序 GitHub 下载链接：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-3
 
 #### 运行 conflux 准备
 
