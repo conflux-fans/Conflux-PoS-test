@@ -40,7 +40,7 @@ RPC URL：http://101.132.158.162:12537
  
 #### You need to download the following files：
 
-- Fullnode GitHub download：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-2
+- Fullnode GitHub download：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-3
  
 #### Preparation of running full node program：
 - Create a directory named conflux
@@ -182,7 +182,7 @@ Click "Lock your staking to obtain interest" after staking successfully. Then pa
 
 PoS Transition test will start at Blockheight 122400 and end at Blockheight 200000. 
 
-GitHub download link：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-2
+GitHub download link：will update later
 
 Download the package in the link `pos_config-v1.2.0-beta-2.tgz` and uncompress the package. Put the files under `run`-`pos_config` folder.
 
