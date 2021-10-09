@@ -1,19 +1,19 @@
-## Conflux PoS Testnet 1st Round Public Test Tutorial
+## Conflux PoS Testnet 2nd Round Public Test Tutorial
 
-### Start Time: Sept.26 18:00(GMT+8)
+### Start Time: Oct.9 18:00(GMT+8)
 
-### Version: v1.2.0-beta-2
+### Version: v1.2.0-beta-3
 
 ### Timeline: (GMT+8)
-- #### We will start fullnode running at around Sept.26th 18:00.
-- #### The PoS registration will start at Blocknumber 129600 (around Sept.27 12:00).
-- #### The PoS registration will close at Blocknumber 475200 (around Sept.29 12:00). After registration closes, you can start adding pos_config.
-- #### The deadline for adding pos_config is at Blockheight 720000 (around Oct.1st 18:00).
+- #### Start fullnode running at around Oct.9 18:00.
+- #### The PoS registration will start at Blocknumber 1200 (around Oct.9 18:10).
+- #### The PoS registration will close at Blocknumber 122400 (around Oct.10 11:00). After registration closes, you can start adding pos_config.
+- #### The deadline for adding pos_config is at Blockheight 200000 (around Oct.11 10:00).
 
 ## 
 ## 
 
-## Fullnode Start (around Sept.26 18:00)
+## Fullnode Start (around Oct.9 18:00)
 ### 1. Set up your new Chrome account
 1. Open the Chrome browser, click the account profile picture in the top-right corner, click the "add" in the pop-up window to set up a new Chrome profile.
 
@@ -121,7 +121,7 @@ Start full node by entering the command `start.bat`.
  
 ![](https://pic3.zhimg.com/80/v2-48fc0b24d573deafb0bbb3f56b58205f_1440w.png)
  
-## PoS Registration (Blocknumber 129600, around Sept.27 12:00)
+## PoS Registration (Blocknumber 1200, around Oct.9 18:10)
  
 ### 1
 We need to set the password when starting the node for the first time. This password is used to encrypt the private key of PoS. Press "enter" when you see the content on the screen as below:
@@ -178,9 +178,9 @@ Click "Lock your staking to obtain interest" after staking successfully. Then pa
 ![image](https://pic1.zhimg.com/80/v2-4918accb94594a9fa1a8ebf802b52ca1_1440w.png)
 ![image](https://pic2.zhimg.com/80/v2-7dce9e6868e5e6d40117d303c2fb9385_1440w.png)
 
-## PoS Transition Test (Blockheight 475200, around Sept.29 12:00; finish before Blockheight 720000, around Oct.1st 18:00)
+## PoS Transition Test (Blockheight 122400, around Oct.10 11:00; finish before Blockheight 200000, around Oct.11 10:00)
 
-PoS Transition test will start at Blockheight 475200 and end at Blockheight 720000. 
+PoS Transition test will start at Blockheight 122400 and end at Blockheight 200000. 
 
 GitHub download link：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-2
 
@@ -193,7 +193,7 @@ Download the package in the link `pos_config-v1.2.0-beta-2.tgz` and uncompress t
 ## Q&A
 **Q1: If I accidentally delete the `pos_key` file under `pos_config` folder, what should I do?**
  
-A1: You shold not delele the file `pos_key`. If you deleted it, you need to reconnect to http://13.212.200.174/ and withdraw the staking. You need to wait for 9 hours for the CFX to be unlocked and then re-register. We suggest you to skip the wait and using a new Chrome account to test.
+A1: You shold not delele the file `pos_key`. If you deleted it, you need to reconnect and withdraw the staking. You need to wait for 9 hours for the CFX to be unlocked and then re-register. We suggest you to skip the wait and using a new Chrome account to test.
  
 **Q2: The program has stuck for more than 20 minutes, what should I do?**
  
