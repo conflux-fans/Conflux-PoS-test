@@ -92,31 +92,31 @@ conflux
 
 修改完成后如图所示：
 
-![](https://pic2.zhimg.com/80/v2-001304b360c1ecfa3c9c9391e0fddd55_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205134-095e5921-bd7d-4302-bcfd-12621820ea38.png)
 
 ### 5.开启测试模式
 
 在常规布置之外，再将log.yaml文件打开后找到改图位置，将所有info替换成debug，后保存并退出。
 
-![](https://pic1.zhimg.com/80/v2-a4fb4d17d2aa1db41941bf220d4cc4f3_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205205-266ad82f-55e5-44b5-b38a-e5400017d6ca.png)
 
 修改完成后如图所示：
 
-![](https://pic3.zhimg.com/80/v2-c280474886569245ea8855a5025c66be_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205230-f542e6f0-0824-49aa-9b60-e0ad352bbad6.png)
 
 ### 6.运行 fullnode 程序
 
 - 打开 **run** 文件夹，按如图所示，右键复制地址
 
-![](https://pic1.zhimg.com/80/v2-f489ab81ba3981bb298a2e80fd98abfb_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205297-0a68a0c6-9683-473c-99bd-2fc31a11c241.png)
 
 - 键盘输入`win+R` ，在弹出窗口中输入 `cmd` ，进入命令行界面
 
-![](https://pica.zhimg.com/80/v2-44af7c027eb3af8bb57f00cb847b6de5_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205319-b0f1aba6-5ab0-408d-903b-82f4d134cd69.png)
 
 - 输入`cd`+空格+粘贴刚才复制的地址
 
-![](https://pic1.zhimg.com/80/v2-53902b06958d58f2f3ca26556556c147_1440w.png)
+![image](https://user-images.githubusercontent.com/32668688/135205344-b4fd0f8e-f715-4c64-9ee2-b3c6fd8e9522.png)
 
 - 输入命令`start.bat`，启动 fullnode
 
