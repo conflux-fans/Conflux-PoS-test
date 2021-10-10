@@ -183,7 +183,7 @@ Password:
 
 ## 三、PoS过渡测试（区块数122400，预计10月10日11时开始；区块高度200000，约10月11日10时前完成）
 
-GitHub下载链接 稍后会发布。
+GitHub下载链接:https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-3
 
 下载链接内的压缩包`pos.config_conflux_win10_x64_v1.2.0-beta-1`，将解压后文件夹内的所有文件移至`run`文件夹的`pos_config`目录下，期间保持程序正常运行
 
