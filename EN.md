@@ -1,52 +1,51 @@
-## Conflux PoS Testnet 2nd Round Public Test Tutorial
+## Conflux PoS Testnet 3rd Round Public Test Tutorial
 
-### Start Time: Oct.9 18:00(GMT+8)
+### Start Time: Oct.20 18:00(GMT+8)
 
-### Version: v1.2.0-beta-3
+### Version: v1.2.0-beta-5
 
 ### Timeline: (GMT+8)
-- #### Start fullnode running at around Oct.9 18:00.
-- #### The PoS registration will start at Blocknumber 1200 (around Oct.9 18:10).
-- #### The PoS registration will close at Blocknumber 122400 (around Oct.10 11:00). After registration closes, you can start adding pos_config.
-- #### The deadline for adding pos_config is at Blockheight 200000 (around Oct.11 10:00).
+- #### Start fullnode running at around Oct.20 18:00.
+- #### The PoS registration will start at Blocknumber 129600 (around Oct.21 12:00).
+- #### The PoS registration will close at Blocknumber 302400 (around Oct.22 12:00). After registration closes, you can start adding pos_config.
+- #### The deadline for adding pos_config is at Blockheight 345000 (around Oct.23 18:00).
 
 ## 
 ## 
 
-## Fullnode Start (around Oct.9 18:00)
-### 1. Set up your new Chrome account
-1. Open the Chrome browser, click the account profile picture in the top-right corner, click the "add" in the pop-up window to set up a new Chrome profile.
-
-![image](https://pic1.zhimg.com/80/v2-2f0c84de6400228b1ce041abe7dfe2e0_1440w.png)
-
-2. Select "Continue without an account" to continue as a guest account. 
-3. Click "Done" and finish account set-up. You can chance your profile afterwards. 
-4. Chrome will automatically switch to the new account after set-up. Your account name will be displayed on the top-right corner.
- 
-### 2. Install ConfluxPortal
-Install the Conflux Portal in the newly created Chrome account.
+## 1 Install ConfluxPortal
  
 You can refer to ConfluxPortal v0.6.10 update tutorial for installing: https://forum.conflux.fun/t/confluxportal-v0-6-10-upgrade-tutorial/9291
- 
-### 3. Set a new blockchain network
+
+## 2 Fullnode Start (around Oct.20 18:00)
+
+### 1. Network setting
+
+Set a new blockchain network
+
+<img src="https://pic1.zhimg.com/80/v2-5fe71055fdff2d3a7df1b8746da93c4e_1440w.png" width="250" height="250">
+
 Blockchain Name: PoS testnet1
  
 RPC URL：http://101.132.158.162:12537
- 
-### 4. Set configuration of the full node program
+
+<img src="https://pic1.zhimg.com/80/v2-403d25687e73feecbc58eec31deca56a_1440w.png" width="250" height="400">
+
+### 2. Set configuration of the fullnode program
+
 #### Running test notes on Windows：
-- We recommend you to close your anti-virus software
+- We recommend you to close your anti-virus software(including Windows Defender)
 - Your Windows 10's version must be 1903 or higher
- 
+
 #### You need to download the following files：
 
-- Fullnode GitHub download：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-3
+Fullnode GitHub download：
  
 #### Preparation of running full node program：
 - Create a directory named conflux
 - Extract the download package to the directory
  
-#### ⚠ The directory structure should look like this:
+ ⚠ The directory structure should look like this:
  
 ```
 conflux
@@ -67,90 +66,85 @@ conflux
 #### Configuration set-up instructions
 
 You need follow these two steps to edit `pos_testnet.toml` file in order to set up the configuration.
- 
-##### 1
 
 ```
 # mining_author="net8888:xxxxxxxxxx..."
 ```
 
-- Please edit "net8888:xxxx..." and set it to your own wallet address. (starts with net8888:)
-- Delete "#" and the space before "mining_author..."
-![image](https://pica.zhimg.com/80/v2-811a1708df8093a2d2acc12df5a2dbcf_1440w.png)
- 
-The command should look like this after edition:
+Please edit "net8888:xxxx..." and set it to your own wallet address. (starts with net8888:)
+
+Delete "#" and the space before "mining_author..."
+
+<img src="https://pica.zhimg.com/80/v2-811a1708df8093a2d2acc12df5a2dbcf_1440w.png" width="250" height="300">
+
+should look like this after edition:
 ![](https://pic2.zhimg.com/80/v2-7a04a058af9a2fd9173eb41075dfb4be_1440w.png)
- 
-##### 2 
 
 ```
 # mining_type = "stratum"
 ```
 
-- Delete "#" and the space before "mining_type..."
-- Replace "stratum" with "cpu"
+Replace "stratum" with "cpu", and delete "#" and the space before "mining_type...".
  
-The command should look like this after edition:
-![image](https://user-images.githubusercontent.com/32668688/135205780-ff562c90-5d8d-484d-b12f-cb5f8eeaead7.png)
- 
-### 5. Turn on the test mode
+should look like this after edition:
+![](https://pic2.zhimg.com/80/v2-001304b360c1ecfa3c9c9391e0fddd55_1440w.png)
+
+
+
+### 3. Turn on the test mode
  
 Open the `log.yaml` file and find the commands shown in the following figures, replace all the "info" with "debug", then save the file.
  
-![image](https://user-images.githubusercontent.com/32668688/135205797-49d9d10f-98e0-4bbb-a918-b2da72f31a77.png)
- 
+<img src="https://pic1.zhimg.com/80/v2-a4fb4d17d2aa1db41941bf220d4cc4f3_1440w.png" width="300" height="300">
+
 The command should look like this after edition:
+
+<img src="https://pic3.zhimg.com/80/v2-c280474886569245ea8855a5025c66be_1440w.png" width="300" height="300">
  
-![image](https://user-images.githubusercontent.com/32668688/135205813-674f7edd-7679-427d-a973-d68319cfed45.png)
- 
-### 6. Run the full node programme
+### 4. Run the full node programme
  
 Open the `run` folder. Right-click your mouse to copy the directory path as the following picture shown.
 
-![image](https://user-images.githubusercontent.com/32668688/135205832-9f34fafb-9cc5-44bd-9f68-8ac6198d218c.png)
+![](https://pic1.zhimg.com/80/v2-f489ab81ba3981bb298a2e80fd98abfb_1440w.png)
  
 Press `win and R` on the keyboard. Open the command window by entering "cmd".
- 
-![image](https://user-images.githubusercontent.com/32668688/135205847-7bb179bc-27db-4452-8078-a0ab17034042.png)
+
+<img src="https://pica.zhimg.com/80/v2-44af7c027eb3af8bb57f00cb847b6de5_1440w.png" width="270" height="150">
  
 Enter `cd` + space + the directory path you copied before.
  
-![image](https://user-images.githubusercontent.com/32668688/135205864-efc734bc-3baf-4cc9-9ef1-6446d87e0d27.png)
+![](https://pic1.zhimg.com/80/v2-53902b06958d58f2f3ca26556556c147_1440w.png)
  
 Start full node by entering the command `start.bat`.
  
 ![](https://pic3.zhimg.com/80/v2-48fc0b24d573deafb0bbb3f56b58205f_1440w.png)
+
+Attention: here you need to enter the password and confirm it:
+
+![](https://pic2.zhimg.com/80/v2-e01c23ae83913f65068eed33ecc335ef_1440w.png)
+
+
+## 3 PoS Registration (Blocknumber 129600, around Oct.21 12:00)
  
-## PoS Registration (Blocknumber 1200, around Oct.9 18:10)
+## PoS Registration 
  
-### 1
-We need to set the password when starting the node for the first time. This password is used to encrypt the private key of PoS. Press "enter" when you see the content on the screen as below:
+### 1. Password setting
+We need to set the password when starting the node for the first time. This password is used to encrypt the private key of PoS. Enter the password and confirm it when you see the content on the screen as below:
 
 ```
 PoS key is not detected and will be generated instead, please input your encryption password. This password is needed when you restart the node
 Password:
+Repeat Password:
 ```
 
-- Try pressing `enter` if it stops running.
-- If you see the following output after you enter the password:![](https://pic1.zhimg.com/80/v2-076499d5fddcbaf4f67420e36c80dee8_1440w.png)
-please open the `stderr.txt` file under `run` directory. And if you see the following output after you open the `stderr.txt` file, you must have entered a wrong password:
-![](https://pic1.zhimg.com/80/v2-cb083d039c54a099b81fddf256ecd5a9_1440w.png)
- Open the `pos_config` under `run` directory and delete the `pos_key` file as shown below.
- ![](https://pica.zhimg.com/80/v2-d2428f117cc6b604cd0cac835961b7b5_1440w.png)
- Restart the full node by entering `start.bat` command.
- 
-### 2
+### 2. PoS Registration
 Right-click the "Start" icon on the left corner of your screen and then press "Windows PowerShell";
-
-### 3
 
 Copy the directory path of the `run` directory using right-click. Enter `cd` + space + the directory path you copied in Powershell.
 
-![](https://pic1.zhimg.com/80/v2-24eddea02c61f7ee17b0b0793651cdfe_1440w.png)
+<img src="https://pic1.zhimg.com/80/v2-24eddea02c61f7ee17b0b0793651cdfe_1440w.png" width="400" height="160">
 
-### 4
-
-Run the command:
+And then run the command:
 
 ```
 ./conflux rpc local pos register --power 1
@@ -158,33 +152,35 @@ Run the command:
 
 ![](https://pic1.zhimg.com/80/v2-7044b4ec2c74b6a4a6078e59434a7fe1_1440w.png)
  
-The first returned value is the data field requied when registering for PoS transactions. The second returned value is the address of the PoS account (you won't be using this for the testing)
+The first returned value is the data field requied when registering for PoS transactions. The second returned value is the address of the PoS account. 
  
-### 5
+### 3. Staking
 
-Access `http://13.212.200.174/` in the browser and connect your wallet(using the conflux testnet). Your balance will be updated. This process might take a couple minutes. 
+Access `https://votetest.confluxnetwork.org/en/` in the browser and connect your Portal(using the conflux PoS testnet1). Your balance will be updated soon. 
 
-![image](https://pic3.zhimg.com/80/v2-a10cf1a4ce272310169a10cacd8c8b7b_1440w.png)
-![image](https://pic3.zhimg.com/80/v2-e74edf180abf321aaadf94c29087999d_1440w.png)
+![](https://pic3.zhimg.com/80/v2-53b33544fda88e42eb39b6248230258c_1440w.png)
 
-### 6
+Choose the staking CFX amount (at least 100). Then click "Deposit". This action need to be confirmed in the portal.
 
-Click "Stake CFX to get the right to vote"  and choose the staking CFX amount (at least 100). Then click "Deposit". This action need to be confirmed in the portal.
-![image](https://pic3.zhimg.com/80/v2-46015957ebbfbb6b3448862213f7c584_1440w.png)
+<img src="https://pic1.zhimg.com/80/v2-29049f14691983ab544b9a63c8ae46b5_1440w.png" width="320" height="160">
 
-### 7
+### 4. Locking
 
-Click "Lock your staking to obtain interest" after staking successfully. Then paste the data field you received in step 4 and enter the votes you would like to lock (100 CFX for 1 vote). Confirm in the portal.
-![image](https://pic1.zhimg.com/80/v2-4918accb94594a9fa1a8ebf802b52ca1_1440w.png)
-![image](https://pic2.zhimg.com/80/v2-7dce9e6868e5e6d40117d303c2fb9385_1440w.png)
+After staking, choose PoS here. 
 
-## PoS Transition Test (Blockheight 122400, around Oct.10 11:00; finish before Blockheight 200000, around Oct.11 10:00)
+![](https://pic2.zhimg.com/80/v2-738f6dfbf19eba927e885ca048a408de_1440w.png)
 
-PoS Transition test will start at Blockheight 122400 and end at Blockheight 200000. 
+Then paste the data field you received in step 2 to "Full node data"，and enter the votes you would like to lock (100 CFX for 1 vote). Confirm in the portal.
 
-GitHub download link：https://github.com/conflux-fans/Conflux-PoS-test/releases/tag/conflux_v1.2.0-beta-3
+<img src="https://pic2.zhimg.com/80/v2-cbafbbbe85b0fd7b7162aa08ed730ff6_1440w.png" width="400" height="450">
 
-Download the package in the link `pos_config-v1.2.0-beta-2.tgz` and uncompress the package. Put the files under `run`-`pos_config` folder.
+
+
+## 4 PoS Transition Test (Blockheight 302400, around Oct.22 12:00; finish before Blockheight 345000, around Oct.23 18:00)
+
+GitHub download link：will release later
+
+Download the package in the link `pos_config-v1.2.0-beta-5.tgz` and uncompress the package. Put the files under `run`-`pos_config` folder.
 
 
 
@@ -206,15 +202,10 @@ A3: Go to Conflux portal->account profile->settings->advanced, look for the "cus
 **Q4: Where can I report bugs during testing?**
 
 A4: upload `stderr.txt`, `pos.log` and `log` folder to a Google Drive folder, and share the link with Cike in Discord.
-
-**Q5: How to unlock votes?**
-
-Q5: Cilck the "Unlock votes".
-![image](https://pic2.zhimg.com/80/v2-dfe231dc87c70f7b9d0abe7f31803030_1440w.png)
  
-**Q6: What should I be cautious about when I restart the node?**
+**Q5: What should I be cautious about when I restart the node?**
 
-A6: Enter the same password you set in the first time and you should be fine:
+A5: Enter the same password you set in the first time and you should be fine:
 
 ```
 PoS key detected, please input your encryption password.
